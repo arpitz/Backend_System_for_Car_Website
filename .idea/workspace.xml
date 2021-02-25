@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Microservices/DogMicroService/DogMicroService/src/main/java/com/udacity/DogMicroService/entity/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1oq3OUMG73Zv5W3LJ1jrF7f8ofO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.6091954" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\UdacityCodeRepository\Backend_System_For_Car_Site\P02-VehiclesAPI\pricing-service\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CarControllerTest.listCars">
+    <configuration name="BoogleMapsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udacity.boogle.maps.BoogleMapsApplication" />
+      <module name="boogle-maps" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.boogle.maps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udacity.eureka.EurekaApplication" />
+      <module name="eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PricingServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udacity.pricing.PricingServiceApplication" />
+      <module name="pricing-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.pricing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehiclesApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.VehiclesApiApplication" />
+      <module name="vehicles-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.vehicles.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarControllerTest.listCars" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicles-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.vehicles.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.vehicles.api" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.api.CarControllerTest" />
+      <option name="METHOD_NAME" value="listCars" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CarControllerTest.listCars" />
+        <item itemvalue="Application.VehiclesApiApplication" />
+        <item itemvalue="Application.PricingServiceApplication" />
+        <item itemvalue="Application.BoogleMapsApplication" />
+        <item itemvalue="Application.EurekaApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="" />
+      <created>1614000261428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614000261428</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
