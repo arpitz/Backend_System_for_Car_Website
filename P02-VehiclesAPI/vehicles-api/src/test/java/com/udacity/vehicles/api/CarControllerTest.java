@@ -111,7 +111,6 @@ public class CarControllerTest {
          *   the whole list of vehicles. This should utilize the car from `getCar()`
          *   below (the vehicle will be the first in the list).
          */
-        Car car = new Car();
         MediaType contentType = new MediaType("application", "hal+json", Charset.forName("UTF-8"));
         mvc.perform(get("/cars/"))
                 .andExpect(status().isOk())
@@ -133,6 +132,14 @@ public class CarControllerTest {
          * TODO: Add a test to check that the `get` method works by calling
          *   a vehicle by ID. This should utilize the car from `getCar()` below.
          */
+        MediaType contentType = new MediaType("application", "hal+json", Charset.forName("UTF-8"));
+
+        mvc.perform(get("/cars/" + 1L))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(contentType))
+                .andExpect(content().json("{}"));
+
+        verify(carService, times(1)).findById(1L);
     }
 
     /**
@@ -146,6 +153,11 @@ public class CarControllerTest {
          *   when the `delete` method is called from the Car Controller. This
          *   should utilize the car from `getCar()` below.
          */
+        mvc.perform(delete("/cars/" + 1L))
+                .andExpect(status().isNoContent())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8));
+
+        verify(carService, times(1)).delete(1L);
     }
 
     /**
