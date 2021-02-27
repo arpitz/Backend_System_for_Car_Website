@@ -7,7 +7,11 @@
     <list default="true" id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Microservices/DogMicroService/DogMicroService/src/main/java/com/udacity/DogMicroService/entity/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/manufacturer/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/manufacturer/Manufacturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/target/classes/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" afterDir="false" />
     </list>
@@ -42,7 +46,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Udacity/course3" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42988506" />
@@ -131,10 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VehiclesApiApplication" />
         <item itemvalue="JUnit.CarControllerTest" />
         <item itemvalue="JUnit.CarControllerTest.deleteCar" />
         <item itemvalue="JUnit.CarControllerTest.findCar" />
-        <item itemvalue="Application.VehiclesApiApplication" />
         <item itemvalue="JUnit.PriceMicroServiceIntegrationTest.getPricingService" />
       </list>
     </recent_temporary>

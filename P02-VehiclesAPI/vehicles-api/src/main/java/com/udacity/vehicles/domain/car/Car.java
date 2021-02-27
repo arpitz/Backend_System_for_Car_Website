@@ -1,5 +1,6 @@
 package com.udacity.vehicles.domain.car;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.udacity.vehicles.domain.Condition;
 import com.udacity.vehicles.domain.Location;
 import java.time.LocalDateTime;
@@ -8,6 +9,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.annotation.ReadOnlyProperty;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 /**
@@ -52,6 +54,7 @@ public class Car {
     @Transient
     private String price;
 
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     public Long getId() {
         return id;
     }
