@@ -7,7 +7,6 @@
     <list default="true" id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Microservices/DogMicroService/DogMicroService/src/main/java/com/udacity/DogMicroService/entity/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/api/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/api/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" afterDir="false" />
@@ -53,7 +52,7 @@
       <recent name="C:\UdacityCodeRepository\Backend_System_For_Car_Site\P02-VehiclesAPI\pricing-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarControllerTest.findCar">
+  <component name="RunManager" selected="JUnit.CarControllerTest">
     <configuration name="VehiclesApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.VehiclesApiApplication" />
       <module name="vehicles-api" />
@@ -63,6 +62,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vehicles-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.vehicles.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.vehicles.api" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.api.CarControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,22 +113,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PriceMicroServiceIntegrationTest.getAllPrices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="pricing-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.pricing.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.pricing.web" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.pricing.web.PriceMicroServiceIntegrationTest" />
-      <option name="METHOD_NAME" value="getAllPrices" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PriceMicroServiceIntegrationTest.getPricingService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="pricing-service" />
       <extension name="coverage">
@@ -133,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CarControllerTest.findCar" />
+        <item itemvalue="JUnit.CarControllerTest" />
         <item itemvalue="JUnit.CarControllerTest.deleteCar" />
+        <item itemvalue="JUnit.CarControllerTest.findCar" />
         <item itemvalue="Application.VehiclesApiApplication" />
         <item itemvalue="JUnit.PriceMicroServiceIntegrationTest.getPricingService" />
-        <item itemvalue="JUnit.PriceMicroServiceIntegrationTest.getAllPrices" />
       </list>
     </recent_temporary>
   </component>
