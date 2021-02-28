@@ -3,6 +3,8 @@ package com.udacity.vehicles.service;
 import com.udacity.vehicles.client.maps.Address;
 import com.udacity.vehicles.domain.car.Car;
 import com.udacity.vehicles.domain.car.CarRepository;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -40,7 +42,31 @@ public class CarService {
      * @return a list of all vehicles in the CarRepository
      */
     public List<Car> list() {
-        return repository.findAll();
+        List<Car> allCars = repository.findAll();
+        List<Car> updatedCars = new ArrayList<>();
+        for(Car car : allCars){
+            // set the pricing
+            Mono<Car> pricingCar = pricing.get()
+                    .uri("/prices/" + car.getId())
+                    .retrieve()
+                    .bodyToMono(Car.class);
+            car.setPrice(pricingCar.block().getPrice());
+
+            // set the address details
+            Mono<Address> mapsMono = maps.get()
+                    .uri("/maps?lat=" + car.getLocation().getLat() + "&lon=" +
+                            car.getLocation().getLon())
+                    .retrieve()
+                    .bodyToMono(Address.class);
+            car.getLocation().setAddress(mapsMono.block().getAddress());
+            car.getLocation().setCity(mapsMono.block().getCity());
+            car.getLocation().setState(mapsMono.block().getState());
+            car.getLocation().setZip(mapsMono.block().getZip());
+
+            updatedCars.add(car);
+        }
+
+        return updatedCars;
     }
 
     /**

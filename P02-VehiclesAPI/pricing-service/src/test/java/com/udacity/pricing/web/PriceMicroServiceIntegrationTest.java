@@ -11,6 +11,7 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.*;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
 
@@ -32,5 +33,15 @@ public class PriceMicroServiceIntegrationTest {
                 this.restTemplate.getForEntity("http://localhost:" + port +
                         "/prices", Price.class);
         assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
+    }
+
+    @Test
+    public void getPricingEntity(){
+        ResponseEntity<Price> response =
+                this.restTemplate.getForEntity("http://localhost:" + port +
+                        "/prices/" + 1, Price.class);
+        assertThat(response.getStatusCode(), equalTo(HttpStatus.OK));
+        assertThat(response.getBody().getPrice(), notNullValue());
+        assertThat(response.getBody().getCurrency(), notNullValue());
     }
 }

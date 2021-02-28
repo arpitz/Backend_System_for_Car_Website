@@ -1,15 +1,14 @@
 package com.udacity.vehicles.api;
 
-import static org.mockito.ArgumentMatchers.any;
+import static net.bytebuddy.matcher.ElementMatchers.is;
+import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.udacity.vehicles.client.maps.MapsClient;
 import com.udacity.vehicles.client.prices.PriceClient;
 import com.udacity.vehicles.domain.Condition;
@@ -34,6 +33,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.ResultMatcher;
 
 /**
  * Implements testing of the CarController class.
@@ -81,12 +81,19 @@ public class CarControllerTest {
     @Test
     public void createCar() throws Exception {
         Car car = getCar();
+        car.setId(1L);
+
+        ObjectMapper obj = new ObjectMapper();
+        String jsonStr = obj.writeValueAsString(car);
+
         mvc.perform(
                 post(new URI("/cars"))
                         .content(json.write(car).getJson())
                         .contentType(MediaType.APPLICATION_JSON_UTF8)
                         .accept(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(status().isCreated());
+                .andExpect(status().isCreated())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(content().json(jsonStr));
     }
 
     /**
@@ -148,6 +155,24 @@ public class CarControllerTest {
         verify(carService, times(1)).delete(1L);
     }
 
+//    Test for Updating car
+
+    @Test
+    public void updateCar() throws Exception{
+        Car car = getCar();
+        car.setId(1L);
+        ObjectMapper obj = new ObjectMapper();
+        String jsonStr = obj.writeValueAsString(car);
+
+        mvc.perform(
+                put(new URI("/cars/1"))
+                        .content(json.write(car).getJson())
+                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                        .accept(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(content().json(jsonStr));
+    }
     /**
      * Creates an example Car object for use in testing.
      * @return an example Car object

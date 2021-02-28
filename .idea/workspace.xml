@@ -7,7 +7,16 @@
     <list default="true" id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Microservices/DogMicroService/DogMicroService/src/main/java/com/udacity/DogMicroService/entity/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/main/java/com/udacity/pricing/api/PricingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/main/java/com/udacity/pricing/service/PriceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/main/java/com/udacity/pricing/service/PricingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/test/java/com/udacity/pricing/web/PriceMicroServiceIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/src/test/java/com/udacity/pricing/web/PriceMicroServiceIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/service/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/service/CarService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/test/java/com/udacity/vehicles/api/CarControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/vehicles-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/vehicles-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" afterDir="false" />
     </list>
@@ -46,13 +55,14 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.42988506" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\UdacityCodeRepository\Backend_System_For_Car_Site\P02-VehiclesAPI\pricing-service\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CarControllerTest">
+  <component name="RunManager" selected="JUnit.CarControllerTest.updateCar">
     <configuration name="VehiclesApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.VehiclesApiApplication" />
       <module name="vehicles-api" />
@@ -66,7 +76,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerTest.createCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vehicles-api" />
       <extension name="coverage">
         <pattern>
@@ -76,28 +86,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.udacity.vehicles.api" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.api.CarControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CarControllerTest.deleteCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="vehicles-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.udacity.vehicles.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.udacity.vehicles.api" />
-      <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.api.CarControllerTest" />
-      <option name="METHOD_NAME" value="deleteCar" />
+      <option name="METHOD_NAME" value="createCar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CarControllerTest.findCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CarControllerTest.updateCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vehicles-api" />
       <extension name="coverage">
         <pattern>
@@ -107,7 +102,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.udacity.vehicles.api" />
       <option name="MAIN_CLASS_NAME" value="com.udacity.vehicles.api.CarControllerTest" />
-      <option name="METHOD_NAME" value="findCar" />
+      <option name="METHOD_NAME" value="updateCar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PriceMicroServiceIntegrationTest.getPricingEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pricing-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.pricing.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.pricing.web" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.pricing.web.PriceMicroServiceIntegrationTest" />
+      <option name="METHOD_NAME" value="getPricingEntity" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,10 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CarControllerTest.updateCar" />
+        <item itemvalue="JUnit.CarControllerTest.createCar" />
         <item itemvalue="Application.VehiclesApiApplication" />
-        <item itemvalue="JUnit.CarControllerTest" />
-        <item itemvalue="JUnit.CarControllerTest.deleteCar" />
-        <item itemvalue="JUnit.CarControllerTest.findCar" />
+        <item itemvalue="JUnit.PriceMicroServiceIntegrationTest.getPricingEntity" />
         <item itemvalue="JUnit.PriceMicroServiceIntegrationTest.getPricingService" />
       </list>
     </recent_temporary>
