@@ -20,7 +20,7 @@ public class Details {
     private String model;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "manufacturer_code")
     @AttributeOverrides({
             @AttributeOverride(name="code", column=@Column(name="manufacturer_code"))

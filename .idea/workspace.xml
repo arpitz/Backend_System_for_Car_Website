@@ -7,11 +7,7 @@
     <list default="true" id="1e1221d9-8eca-4137-bf00-b13416df4851" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Microservices/DogMicroService/DogMicroService/src/main/java/com/udacity/DogMicroService/entity/Dog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/car/Details.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/manufacturer/Manufacturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/java/com/udacity/vehicles/domain/manufacturer/Manufacturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/target/classes/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/target/classes/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chatApplication/src/test/java/com/udacity/jwdnd/mvc_basics2/chatApplication/ChatApplicationTests.java" afterDir="false" />
     </list>
